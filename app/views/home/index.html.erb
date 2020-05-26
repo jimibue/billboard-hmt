@@ -1,0 +1,26 @@
+<h1>Home#index</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+<h1>Songs</h1>
+<ul>
+  <% @songs.each do |song| %>
+    <li><%= "name: #{song.name} ID: #{song.id}"%></li>
+  <% end %>
+</ul>
+<h1>Artists</h1>
+<ul>
+  <% @artists.each do |artist| %>
+    <li><%= "name: #{artist.name} ID: #{artist.id}"%></li>
+  <% end %>
+</ul>
+<h1>Billboards</h1>
+<ul>
+  <% @billboards.each do |b| %>
+    <li><%= "name: #{b.name} ID: #{b.id}"%></li>
+  <% end %>
+</ul>
+<h1>Rankings</h1>
+<ul>
+  <% @rankings.each do |ranking| %>
+    <li><%= "song_id: #{ranking.song_id} billboard_id:#{ranking.billboard_id} rank: #{ranking.rank}"%></li>
+  <% end %>
+</ul>

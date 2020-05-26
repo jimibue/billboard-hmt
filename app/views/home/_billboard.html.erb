@@ -1,0 +1,9 @@
+<h1><%= billboard.name %></h1>
+<% billboard.rankings.each do |r| %>
+  <p><%= "#{r.rank}: #{Song.find(r.song_id).name} " %></p>
+  <p><%= "artist: #{Song.find(r.song_id).artist.name}" %></p>
+<% end %>
+<%#<% billboard.songs.each do |song| %>
+  <%#  <p><%= "#{song.name} rank: #{billboard}" %></p>
+<%#<% end %>
+<%# <% billboard.rankings.find(billboard.id).rank%>

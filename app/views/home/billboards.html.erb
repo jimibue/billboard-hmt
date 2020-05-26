@@ -1,0 +1,8 @@
+<h1>Billboards</h1>
+<ul>
+  <% @billboards.each do |b| %>
+    <%= render partial: 'billboard', locals: { billboard: b}
+
+ %>
+  <% end %>
+</ul>
